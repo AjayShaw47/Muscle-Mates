@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding: 0 20px;
+    padding-top: 20px;
+
+}
+
+
+.today-workout p {
+    font-size: 14px;
+}
+
+
+.exercise-heading {
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.exercises-area {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 20px;
+
+}
+
+.exercise-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 120px;
+    border: 2px solid rgb(18, 189, 18);
+    border-radius: 8px;
+    padding: 10px 10px;
+}
+
+.exercise-info {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+
+}
+
+.exercises img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+
+.done-btn {
+    border-radius: 26px;
+    height: 26px;
+    width: 26px;
+    background-color: rgb(18, 189, 18);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 6px;
+}
+
+.start-workout {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 14px 20px;
+    margin-top: 24px;
+    color: white;
+    background-color: rgb(70, 124, 233);
+    cursor: pointer;
+
+
+}
+
+
+.overview-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 30px;
+    padding: 0 30px;
+    padding-bottom: 30px;
+}
+
+
+.overview-info {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 6px;
+}
+
+.overview-section img {
+    height: 26px;
+    width: 26px;
+}
+
+.over-view-data {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+#workouts {
+    background-color: rgb(248, 200, 248);
+    border: 1px solid purple;
+
+}
+
+#duration {
+    background-color: rgb(246, 203, 202);
+    border: 1px solid rgb(235, 67, 67);
+
+}
+
+#calories {
+    background-color: rgb(248, 230, 215);
+    border: 1px solid rgb(241, 124, 7);
+
+}
+
+#streak {
+    background-color: rgb(209, 245, 209);
+    border: 1px solid rgb(1, 117, 1);
+
+}
+
+.streak-area {
+    margin-top: 30px;
+    padding: 0 30px;
+}
+
+.streak-container {
+    width: 100%;
+    margin: 30px auto;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid black;
+}
+
+.calendar {
+    display: grid;
+    grid-template-rows: 20px 1fr;
+    gap: 16px;
+    width: 400px;
+}
+
+.weeks {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 30px;
+
+}
+
+.week {
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+.days-labels {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 10px;
+    padding-right: 8px;
+}
+
+.day-label {
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    padding-right: 4px;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(53, 12px);
+    grid-template-rows: repeat(7, 12px);
+    gap: 2px;
+}
+
+.day {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+
+
+@media (max-width: 600px) {
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+    .fitness-activity {
+        padding-top: 20px;
+    }
+
+    .overview-section {
+        grid-template-columns: 1fr;
+    }
+
+}

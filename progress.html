@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="progress.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="pic/logo.png" alt="Muscle Mates Logo">
+        </div>
+        <nav>
+            <div class="nav-links">
+                <div><a href="dashboard.html">Dashboard</a></div>
+                <div><a href="progress.html">Progress</a></div>
+                <div><a href="workout.html">Workouts</a></div>
+                <div><a href="#contact">Community</a></div>
+            </div>
+            <div class="dots-icon">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            <div>
+                <img class="notify" src="pic/bell.png" alt="">
+            </div>
+
+            <div>
+                <img class="dp" src="pic/circle-user.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="container container-upper">
+            <div class="personal-records">
+                <h2>🎉 Personal Records</h2>
+
+                <div class="record-section">
+                    <div class="record-info" id="bench-press">
+                        <div>
+                            <p>Bench Press</p>
+                            <p class="record-data">80 Kg</p>
+                            <p class="record-history">New record</p>
+                        </div>
+                        <div><img src="pic/gold-medal.png" alt=""></div>
+                    </div>
+                    <div class=" record-info" id="barbell-squat">
+                        <div>
+                            <p>Barbell Squat</p>
+                            <p class="record-data">120 Kg</p>
+                            <p class="record-history">1 week ago</p>
+                        </div>
+                        <div><img src="pic/gold-medal.png" alt=""></div>
+                    </div>
+                    <div class="record-info" id="deadlift">
+                        <div>
+                            <p>Deadlift</p>
+                            <p class="record-data">200 Kg</p>
+                            <p class="record-history">3 days ago</p>
+                        </div>
+                        <div>
+                            <img src="pic/gold-medal.png" alt="">
+                            <img src="pic/gold-medal.png" alt="">
+                            <img src="pic/gold-medal.png" alt="">
+                        </div>
+                    </div>
+                    <div class="record-info" id="plank">
+                        <div>
+                            <p>Plank</p>
+                            <p class="record-data">3:45 m</p>
+                            <p class="record-history">2 weeks ago</p>
+                        </div>
+
+                        <div>
+                            <img src="pic/gold-medal.png" alt="">
+                            <img src="pic/gold-medal.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-container">
+                <h2 class="graph-title">Exercise Progress</h2>
+                <p>Max weight progression of your exercise</p>
+                <div class="graph" id="progress-graph">
+                    <div class="y-axis" id="y-axis"></div>
+                    <div class="x-axis" id="x-axis"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-lower">
+            <div class="graph-container">
+                <h2 class="graph-title">Workout Duration Trend</h2>
+                <p>Duration of your recent workouts</p>
+                <div class="graph" id="time-graph">
+                    <div class="y-axis" id="y-axis"></div>
+                    <div class="x-axis" id="x-axis"></div>
+                </div>
+            </div>
+
+            <div class="graph-container">
+                <h2 class="graph-title">Total Volume Lifted</h2>
+                <p>Total weight x reps per workouts</p>
+                <div class="graph" id="volume-graph">
+                    <div class="y-axis" id="y-axis"></div>
+                    <div class="x-axis" id="x-axis"></div>
+                </div>
+            </div>
+            <div class="other-stats">
+                <div class="avg-workout-time"></div>
+                <div class="avg-volume"></div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+</body>
+
+</html>
