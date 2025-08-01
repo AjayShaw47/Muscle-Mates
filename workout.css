@@ -1,12 +1,15 @@
 main {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
+    padding: 20px 8px;
+
 }
 
 .container-left {
-    padding: 20px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
-
 
 
 .search-exercise {
@@ -40,7 +43,7 @@ main {
     padding: 0 8px;
 }
 
-.filter-options select {
+select {
     border: none;
     border-radius: 8px;
     background-color: rgb(228, 226, 226);
@@ -72,14 +75,99 @@ td {
     border-bottom: 1px solid rgb(228, 226, 226);
     padding: 4px 8px;
     text-align: left;
-    padding: 12px 12px;
+    padding: 12px 8px;
 }
 
 th:last-child,
 td:last-child {
     border-right: none;
+    text-align: center;
 }
 
 tr:last-child td {
     border-bottom: none;
+}
+
+
+.workout-split-days {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    margin-top: 12px;
+    column-gap: 8px;
+    margin: 24px 0;
+}
+
+.workout-split-days div {
+    background-color: rgb(228, 226, 226);
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 2px solid black;
+    width: 100px;
+}
+
+
+.workout-split-table input {
+    width: 36px;
+    border: none;
+
+}
+
+.workout-split-table input[type="text"] {
+    width: 100px;
+}
+
+.workout-split-days-select {
+    display: none;
+}
+
+
+table img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.level-column {
+    text-align: center;
+}
+
+.edit-column {
+    text-align: center;
+}
+
+
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .workout-split-days-select {
+        display: inline-block;
+    }
+
+    .workout-split-days {
+        display: none;
+    }
+
+    .container-left {
+        padding-right: 20px;
+
+    }
+
+    .container-right {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+
+    }
+
+
+
+
 }
