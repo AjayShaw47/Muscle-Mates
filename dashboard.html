@@ -8,12 +8,21 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="dashboard.css">
     <link rel="icon" href="pic/icon.png" type="image/png">
+    <script src="header.js" defer></script>
+
 </head>
 
 <body>
     <header>
-        <div>
-            <img class="logo" src="pic/logo.png" alt="Muscle Mates Logo">
+        <div class="header-container-image-menu">
+            <div class="header-image-container">
+                <img class="logo" src="pic/logo.png" alt="Muscle Mates Logo">
+            </div>
+            <div class="hamburger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
         <nav>
             <div class="nav-links">
@@ -22,20 +31,59 @@
                 <div><a href="workout.html">Workouts</a></div>
                 <div><a href="#contact">Community</a></div>
             </div>
-            <div class="dots-icon">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+
             <div>
                 <img class="notify" src="pic/bell.png" alt="">
             </div>
 
-            <div>
-                <img class="dp" src="pic/circle-user.png" alt="">
+            <div class="profile-section">
+                <img class="dp" src="pic/lion.png" alt="">
+                <div class="profile-section-preview">
+                    <div class="profile-section-preview-container">
+                        <div class="profile">
+                            <img src="pic/lion.png" alt="">
+                            <p>Profile</p>
+                        </div>
+                        <div class="color-mode-toggle">
+                            <p>Dark Mode</p>
+                            <div class="slider-container">
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="notification-toggle">
+                            <p>Notification</p>
+                            <div class="slider-container">
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="log-out-section">
+                            <p>Log Out</p>
+                            <div><img src="pic/logout.png" alt=""></div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </nav>
     </header>
+
+    <div class="menu-overlay" id="menuOverlay">
+        <nav>
+            <div class="cross"><img src="pic/close.png" alt=""></div>
+            <ul class="menu-items">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="workout.html">Workout</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <main class="section">
         <div class="today-workout">
