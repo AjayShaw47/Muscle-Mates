@@ -1,0 +1,72 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container-left {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+
+}
+
+.container-left p {
+    color: grey;
+    font-size: 14px;
+}
+
+.profile-pic-info-section {
+    display: flex;
+    align-items: center;
+}
+
+
+
+img {
+    width: 60px;
+    height: 100%;
+}
+
+.profile-info .name {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 6px 0;
+}
+
+.form-group input {
+    width: 50%;
+}
+
+.avatars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    overflow-y: auto;
+    padding: 10px;
+    width: 300px;
+}
+
+.avatar-pic {
+    text-align: center;
+    padding: 4px;
+}
+
+.update-button {
+    margin-top: 20px;
+    width: 40%;
+    border: 1px solid rgb(32, 78, 228);
+    background-color: rgb(85, 127, 212);
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+}
